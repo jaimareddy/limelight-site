@@ -78,6 +78,7 @@ h1 .accent { color: var(--forest-2); font-style: italic; }
 .stat-strip {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 34px 0 10px;
 }
+.stat-strip--three { grid-template-columns: repeat(3, 1fr); }
 .stat-box {
   background: var(--card); border: 1px solid var(--border); border-radius: 16px;
   padding: 24px 20px; box-shadow: var(--shadow); position: relative; overflow: hidden;

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Limelight — Qualified sales calls, every month</title>
-<meta name="description" content="Limelight is a cold email agency that reaches out to your TAM and generates qualified sales opportunities every month." />
+<title>Limelight — Cold email for SaaS founders</title>
+<meta name="description" content="Limelight is a cold email agency built for B2B SaaS founders. We build your list, write the copy, and run the campaigns that book qualified sales conversations on your calendar." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -141,6 +141,31 @@
     background: var(--forest-soft); align-self: flex-start; padding: 6px 12px; border-radius: 999px;
   }
 
+  /* Fit section */
+  .fit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .fit-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+    padding: 30px 28px; box-shadow: var(--shadow);
+  }
+  .fit-card--yes { border-top: 4px solid var(--forest-2); }
+  .fit-card--no { border-top: 4px solid #c9522e; }
+  .fit-head {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em;
+    margin-bottom: 20px;
+  }
+  .fit-icon { font-size: 18px; }
+  .fit-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .fit-list li {
+    position: relative; padding-left: 26px; font-size: 15.5px; color: var(--muted); line-height: 1.5;
+  }
+  .fit-card--yes .fit-list li::before {
+    content: "✓"; position: absolute; left: 0; top: 0; font-weight: 700; color: var(--forest-2);
+  }
+  .fit-card--no .fit-list li::before {
+    content: "✕"; position: absolute; left: 0; top: 0; font-weight: 700; color: #c9522e;
+  }
+
   /* Closing band */
   .closing {
     background: var(--forest); border-radius: 24px; padding: 56px 40px; text-align: center;
@@ -162,6 +187,7 @@
 
   @media (max-width: 760px) {
     .grid { grid-template-columns: 1fr; }
+    .fit-grid { grid-template-columns: 1fr; }
     .hero { padding: 40px 0 18px; }
     .section { padding: 44px 0; }
     .closing { padding: 44px 24px; }
@@ -178,11 +204,10 @@
 
     <section class="hero">
       <span class="eyebrow">Cold outbound, done for you</span>
-      <h1>10 qualified meetings booked every month, or you <span class="accent">don't pay.</span></h1>
-      <p class="lede">Limelight is a cold email agency that reaches out to your TAM and generates qualified sales opportunities every month — so you can focus on closing and growing your business.</p>
+      <h1>Cold email that books qualified meetings for <span class="accent">SaaS founders.</span></h1>
+      <p class="lede">Limelight is a cold email agency built for B2B SaaS founders. We build your list, write the copy, and run the campaigns that put qualified sales conversations on your calendar — so you can stay focused on closing and building.</p>
       <div class="cta-row">
         <a class="btn" href="https://cal.com/jai-mareddy/30min" target="_blank" rel="noopener">Book a call <span class="arrow">→</span></a>
-        <span class="guarantee-pill">✅ <b>10 qualified meetings a month, or you don't pay.</b></span>
       </div>
     </section>
 
@@ -222,9 +247,38 @@
       </div>
     </section>
 
+    <section class="section" id="fit">
+      <div class="section-label">Who we work with</div>
+      <h2 class="section-title">Is Limelight right for you?</h2>
+
+      <div class="fit-grid">
+        <div class="fit-card fit-card--yes">
+          <div class="fit-head"><span class="fit-icon">✅</span> You're a good fit if</div>
+          <ul class="fit-list">
+            <li>You're a B2B SaaS founder with a product customers already pay for</li>
+            <li>You have a clearly defined ideal customer profile</li>
+            <li>Your deal size supports outbound economics (roughly $5k+ annual contract value)</li>
+            <li>You have the capacity to take on additional sales conversations</li>
+            <li>You're looking to build a consistent, repeatable pipeline</li>
+          </ul>
+        </div>
+
+        <div class="fit-card fit-card--no">
+          <div class="fit-head"><span class="fit-icon">🚫</span> You're not a good fit if</div>
+          <ul class="fit-list">
+            <li>You're pre-product or still validating product-market fit</li>
+            <li>You sell B2C or low-ticket offers</li>
+            <li>You're expecting results overnight rather than compounding over a few months</li>
+            <li>You aren't able to consistently show up for the meetings we book</li>
+            <li>You'd prefer to manage every campaign detail yourself rather than trust a proven system</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="closing">
-      <h2>Want 10 qualified meetings on your calendar?</h2>
-      <p>Book a 30-minute call and I'll show you exactly how we'd fill your pipeline this month.</p>
+      <h2>Ready to fill your calendar?</h2>
+      <p>Book a 30-minute call and I'll show you exactly how we'd build your pipeline.</p>
       <a class="btn btn--light" href="https://cal.com/jai-mareddy/30min" target="_blank" rel="noopener">Book a call <span class="arrow">→</span></a>
     </section>
 

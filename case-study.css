@@ -177,7 +177,7 @@ footer .brand { font-size: 16px; }
 /* Video testimonial */
 .testimonial {
   background: var(--card); border: 1px solid var(--border); border-radius: 18px;
-  padding: 10px; box-shadow: var(--shadow); max-width: 380px;
+  padding: 11px; box-shadow: var(--shadow); max-width: 450px;
 }
 .testimonial video {
   width: 100%; display: block; border-radius: 12px;

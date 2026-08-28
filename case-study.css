@@ -172,3 +172,19 @@ footer .brand { font-size: 16px; }
   .closing { padding: 44px 24px; }
   .client-meta { gap: 20px; }
 }
+
+/* Video testimonial */
+.testimonial {
+  background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+  padding: 14px; box-shadow: var(--shadow); max-width: 720px;
+}
+.testimonial video {
+  width: 100%; display: block; border-radius: 12px;
+  background: #0d1a14; aspect-ratio: 16 / 9;
+}
+.testimonial figcaption {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 15px 10px 5px;
+}
+.testimonial .t-name { font-size: 15px; font-weight: 700; color: var(--forest); letter-spacing: -0.01em; }
+.testimonial .t-role { font-size: 14px; color: var(--muted); }
